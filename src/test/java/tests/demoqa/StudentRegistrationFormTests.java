@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
 
@@ -18,6 +19,7 @@ import static io.qameta.allure.Allure.step;
 public class StudentRegistrationFormTests extends TestBase {
 
     @Test
+    @Tag("smoke")
     @DisplayName("Successful fill registration form")
     void successfulFillFormTest() {
         Faker faker = new Faker();
